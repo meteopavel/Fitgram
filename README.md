@@ -17,3 +17,14 @@ Fitgram — это платформа для создания, обмена и �
 - **База данных**: PostgreSQL
 - **Аутентификация**: JWT (JSON Web Tokens)
 - **Хостинг**: Docker, Nginx (опционально)
+
+## Запуск локально
+* Создать файл .env и заполнить его переменными по примеру из файла .env.example
+* Установить и запустить Docker
+* Выполнить команды:
+```
+docker compose up -d --build
+docker compose exec backend python manage.py migrate
+docker compose exec backend python manage.py collectstatic --no-input
+docker compose exec backend python manage.py createsuperuser
+```
