@@ -1,0 +1,38 @@
+version: '3'
+
+volumes:
+  pg_data_production:
+  static_volume:
+  media_volume:
+
+services:
+  db:
+    image: postgres:13
+    env_file: .env
+    volumes:
+      - pg_data_production:/var/lib/postgresql/data
+  backend:
+    depends_on:
+      - db
+    image: meteopavel/fitgram_backend
+    env_file: .env
+    volumes:
+      - static_volume:/static
+      - media_volume:/app/media
+  frontend:
+    image: meteopavel/fitgram_frontend
+    env_file: .env
+    volumes:
+      - ./frontend/:/app/result_build/
+  gateway:
+    depends_on:
+      - backend
+    image: meteopavel/fitgram_gateway
+    env_file: .env
+    volumes:
+      - ./frontend/build:/usr/share/nginx/html/
+      - ./docs/:/usr/share/nginx/html/api/docs/
+      - static_volume:/static
+      - media_volume:/media
+    ports:
+      - 10000:80
