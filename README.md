@@ -1,30 +1,34 @@
-# Fitgram
+<!-- PROJECT SHIELDS -->
+[![Python][Python-shield]][Python-url]
+[![Django][Django-shield]][Django-url]
+[![PostgreSQL][PostgreSQL-shield]][PostgreSQL-url]
 
-Fitgram — это платформа для создания, обмена и сохранения персонализированных фитнес-планов. Неважно, хотите ли вы похудеть, набрать мышечную массу или просто улучшить свою физическую форму — здесь вы найдете программы, которые помогут вам достичь ваших целей.
 
-## Основные возможности
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/meteopavel/Fitgram">
+    <img src="frontend\public\favicon.png" alt="Logo" width="300" height="300">
+  </a>
 
-- **Создание фитнес-планов**: Добавляйте свои программы тренировок с детальным описанием упражнений, подходов и времени.
-- **Обмен опытом**: Делитесь своими планами с другими пользователями и находите новые идеи для тренировок.
-- **Избранное**: Сохраняйте понравившиеся программы, чтобы использовать их позже.
-- **Авторизация**: Регистрируйтесь и входите в систему, чтобы отслеживать свои программы и взаимодействовать с сообществом.
-- **Категории**: Фильтруйте программы по целям (похудение, набор мышечной массы, растяжка и т.д.).
+  <h3 align="center">Fitgram</h3>
 
-## Технологии
+  <p align="center">
+    Удобная платформа для обмена фитнес-планами и программами тренировок!
+    <br />
+    <a href="https://fitgram.meteopavel.space">Демо-версия</a>
+    ·
+    <a href="https://github.com/meteopavel/Fitgram/issues/new?labels=bug">Сообщить об ошибке</a>
+    ·
+    <a href="https://github.com/meteopavel/Fitgram/issues/new?labels=enhancement">Предложить улучшение</a>
+  </p>
+</div>
 
-- **Backend**: FastAPI
-- **Frontend**: React.js
-- **База данных**: PostgreSQL
-- **Аутентификация**: JWT (JSON Web Tokens)
-- **Хостинг**: Docker, Nginx (опционально)
-
-## Запуск локально
-* Создать файл .env и заполнить его переменными по примеру из файла .env.example
-* Установить и запустить Docker
-* Выполнить команды:
-```
-docker compose up -d --build
-docker compose exec backend python manage.py migrate
-docker compose exec backend python manage.py collectstatic --no-input
-docker compose exec backend python manage.py createsuperuser
-```
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[Python-shield]: https://img.shields.io/badge/Python-v3.9-blue?style=flat&logo=python&labelColor=FDEBD0&logoColor=blue
+[Python-url]: https://www.python.org/downloads/release/python-3921/
+[Django-shield]: https://img.shields.io/badge/Django-v3.2-green?style=flat&logo=django&labelColor=FDEBD0&logoColor=blue
+[Django-url]: https://docs.djangoproject.com/en/5.0/releases/3.2/
+[PostgreSQL-shield]: https://img.shields.io/badge/PostgreSQL-v13.10-blue?style=flat&logo=PostgreSQL&labelColor=FDEBD0&logoColor=blue
+[PostgreSQL-url]: https://www.postgresql.org/docs/13/release-13-10.html 
