@@ -23,11 +23,10 @@ def create_ingredients_list(ingredients):
 def get_pdf_shopping_list(items):
     buffer = io.BytesIO()
     p = canvas.Canvas(buffer)
-    pdfmetrics.registerFont(TTFont('Lobster', 'static/Lobster-Regular.ttf'))
-    pdfmetrics.registerFont(TTFont('AmaticSC', 'static/AmaticSC-Regular.ttf'))
-    p.setFont('Lobster', 30)
-    p.drawCentredString(290, 780, 'Что нужно купить:')
-    p.setFont('AmaticSC', 28)
+    pdfmetrics.registerFont(TTFont('Roboto', 'static/Roboto-Regular.ttf'))
+    p.setFont('Roboto', 30)
+    p.drawCentredString(290, 780, 'План тренировки:')
+    p.setFont('Roboto', 16)
     text_object = p.beginText(2.5 * cm, 27 * cm - 2 * cm)
     for line in create_ingredients_list(items).splitlines(False):
         text_object.textLine(line.rstrip())
