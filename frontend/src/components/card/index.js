@@ -55,7 +55,7 @@ const Card = ({
             }}
             disabled={!authContext}
           >
-            {is_in_shopping_cart ? <><Icons.DoneIcon />Рецепт добавлен</> : <><Icons.PlusIcon fill='#4A61DD' /> Добавить в покупки</>}
+            {is_in_shopping_cart ? <><Icons.DoneIcon />Тренировка добавлена</> : <><Icons.PlusIcon fill='#4A61DD' /> Добавить в план</>}
           </Button>}
           
           {authContext && <Button

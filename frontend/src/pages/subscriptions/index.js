@@ -33,7 +33,7 @@ const SubscriptionsPage = () => {
     <Container>
       <MetaTags>
         <title>Мои подписки</title>
-        <meta name="description" content="Продуктовый помощник - Мои подписки" />
+        <meta name="description" content="Fitgram - Мои подписки" />
         <meta property="og:title" content="Мои подписки" />
       </MetaTags>
       <Title

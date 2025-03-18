@@ -1,6 +1,6 @@
 export default [
   {
-    title: 'Рецепты',
+    title: 'Упражнения',
     href: '/recipes',
     auth: false
   },{
@@ -8,7 +8,7 @@ export default [
     href: '/subscriptions',
     auth: true
   },{
-    title: 'Создать рецепт',
+    title: 'Создать упражнение',
     href: '/recipes/create',
     auth: true
   },{
@@ -16,7 +16,7 @@ export default [
     href: '/favorites',
     auth: true
   }, {
-    title: 'Список покупок',
+    title: 'План тренировки',
     href: '/cart',
     auth: true
   }

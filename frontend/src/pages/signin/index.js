@@ -15,7 +15,7 @@ const SignIn = ({ onSignIn }) => {
     <Container>
       <MetaTags>
         <title>Войти на сайт</title>
-        <meta name="description" content="Продуктовый помощник - Войти на сайт" />
+        <meta name="description" content="Fitgram - Войти на сайт" />
         <meta property="og:title" content="Войти на сайт" />
       </MetaTags>
       <Title title='Войти на сайт' />

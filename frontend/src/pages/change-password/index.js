@@ -14,7 +14,7 @@ const ChangePassword = ({ onPasswordChange }) => {
     <Container>
       <MetaTags>
         <title>Изменить пароль</title>
-        <meta name="description" content="Продуктовый помощник - Изменить пароль" />
+        <meta name="description" content="Fitgram - Изменить пароль" />
         <meta property="og:title" content="Изменить пароль" />
       </MetaTags>
       <Title title='Изменить пароль' />

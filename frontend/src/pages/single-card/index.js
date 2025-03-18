@@ -55,7 +55,7 @@ const SingleCard = ({ loadItem, updateOrders }) => {
     <Container>
       <MetaTags>
         <title>{name}</title>
-        <meta name="description" content={`Продуктовый помощник - ${name}`} />
+        <meta name="description" content={`Fitgram - ${name}`} />
         <meta property="og:title" content={name} />
       </MetaTags>
       <div className={styles['single-card']}>
@@ -85,7 +85,7 @@ const SingleCard = ({ loadItem, updateOrders }) => {
               </div>
               {(userContext || {}).id === author.id && <LinkComponent
                 href={`${url}/edit`}
-                title='Редактировать рецепт'
+                title='Редактировать упражнение'
                 className={styles['single-card__edit']}
               />}
             </p>
@@ -99,7 +99,7 @@ const SingleCard = ({ loadItem, updateOrders }) => {
               }}
             >
               
-            {is_in_shopping_cart ? <><Icons.DoneIcon color="#4A61DD"/>Рецепт добавлен</> : <><Icons.PlusIcon /> Добавить в покупки</>}
+            {is_in_shopping_cart ? <><Icons.DoneIcon color="#4A61DD"/>Упражнение добавлено</> : <><Icons.PlusIcon /> Добавить в план</>}
             </Button>}
             {(userContext || {}).id !== author.id && authContext && <Button
               className={styles['single-card__button']}

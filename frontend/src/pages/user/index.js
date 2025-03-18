@@ -79,7 +79,7 @@ const UserPage = ({ updateOrders }) => {
     <Container className={styles.container}>
       <MetaTags>
         <title>{user ? `${user.first_name} ${user.last_name}` : 'Страница пользователя'}</title>
-        <meta name="description" content={user ? `Продуктовый помощник - ${user.first_name} ${user.last_name}` : 'Продуктовый помощник - Страница пользователя'} />
+        <meta name="description" content={user ? `Fitgram - ${user.first_name} ${user.last_name}` : 'Fitgram - Страница пользователя'} />
         <meta property="og:title" content={user ? `${user.first_name} ${user.last_name}` : 'Страница пользователя'} />
       </MetaTags>
       <div className={styles.title}>

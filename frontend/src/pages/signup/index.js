@@ -15,7 +15,7 @@ const SignUp = ({ onSignUp }) => {
     <Container>
       <MetaTags>
         <title>Регистрация</title>
-        <meta name="description" content="Продуктовый помощник - Регистрация" />
+        <meta name="description" content="Fitgram - Регистрация" />
         <meta property="og:title" content="Регистрация" />
       </MetaTags>
       <Title title='Регистрация' />
